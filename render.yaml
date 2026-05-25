@@ -1,0 +1,34 @@
+# Render Blueprint for Rehearse
+# Deploys the Next.js + Speech Engine WS server as a single web service.
+# See: https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: rehearse
+    runtime: node
+    region: oregon
+    plan: starter
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm build
+    startCommand: pnpm start
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: PNPM_VERSION
+        value: "9"
+      - key: NODE_ENV
+        value: production
+      # Render fills RENDER_EXTERNAL_URL automatically — we map it to PUBLIC_BASE_URL
+      # so the Speech Engine knows the public wss URL of this service.
+      - key: PUBLIC_BASE_URL
+        fromService:
+          name: rehearse
+          type: web
+          property: host
+      # ElevenLabs credentials must be provided manually after first deploy:
+      # https://dashboard.render.com → service → Environment.
+      - key: ELEVENLABS_API_KEY
+        sync: false
+      - key: ELEVENLABS_ENGINE_ID
+        sync: false
