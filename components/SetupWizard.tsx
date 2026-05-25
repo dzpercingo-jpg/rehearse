@@ -172,7 +172,7 @@ export function SetupWizard() {
               <p className="text-sm text-zinc-400">
                 Your LLM — the brain of the agent. We use{" "}
                 <code className="rounded bg-black/40 px-1 py-0.5 text-xs">
-                  mistral-small-latest
+                  ministral-8b-latest
                 </code>{" "}
                 by default. Mistral&apos;s free tier covers 1B tokens/month,
                 so the whole conversation loop costs nothing.{" "}

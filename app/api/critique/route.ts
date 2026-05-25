@@ -15,7 +15,7 @@ const Body = z.object({
   scenarioId: z.string(),
   personaId: z.string(),
   mistralApiKey: z.string().min(10),
-  llmModel: z.string().default("mistral-small-latest"),
+  llmModel: z.string().default("ministral-8b-latest"),
   transcript: z.array(
     z.object({
       role: z.enum(["user", "agent"]),

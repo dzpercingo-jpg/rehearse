@@ -53,7 +53,7 @@ export function ReviewView() {
         scenarioId: last.scenarioId,
         personaId: last.personaId,
         mistralApiKey: creds.mistralApiKey,
-        llmModel: "mistral-small-latest",
+        llmModel: "ministral-8b-latest",
         transcript: last.transcript.map((t) => ({
           role: t.role,
           content: t.content,

@@ -87,7 +87,7 @@ export function ConversationStage({
           customContext,
           elevenLabsApiKey: creds.elevenLabsApiKey,
           mistralApiKey: creds.mistralApiKey,
-          llmModel: "mistral-small-latest",
+          llmModel: "ministral-8b-latest",
           engineId: creds.engineId,
         }),
       });

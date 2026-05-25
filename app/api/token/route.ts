@@ -30,7 +30,7 @@ const Body = z.object({
   customContext: z.string().optional(),
   elevenLabsApiKey: z.string().min(10),
   mistralApiKey: z.string().min(10),
-  llmModel: z.string().default("mistral-small-latest"),
+  llmModel: z.string().default("ministral-8b-latest"),
   engineId: z.string().min(4),
 });
 

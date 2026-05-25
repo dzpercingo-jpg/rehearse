@@ -47,7 +47,7 @@ Eight built-in scenarios (raise, breakup, landlord, investor pitch, job intervie
 
 - **Frontend**: Next.js 16 (App Router), TypeScript, Tailwind v4, Framer Motion, [@elevenlabs/react](https://www.npmjs.com/package/@elevenlabs/react).
 - **Backend**: Same Node process. We boot Next.js programmatically (`server.ts`) and attach `SpeechEngineResource.attach(httpServer, "/ws", ...)` to the same HTTP server. The Speech Engine handles JWT verification, audio, STT/TTS, and turn-taking. We just provide the LLM stream.
-- **LLM**: Mistral by default (`mistral-small-latest`), via Mistral&apos;s OpenAI-compatible Chat Completions API. Swap to `mistral-medium-latest`, `mistral-large-latest`, or `ministral-8b-latest` (lowest latency) by editing [`lib/llm.ts`](./lib/llm.ts). The Speech Engine SDK reads OpenAI-format stream chunks natively, so Mistral plugs in with zero translation.
+- **LLM**: Mistral by default (`ministral-8b-latest` — fast + reliable on the free tier), via Mistral&apos;s OpenAI-compatible Chat Completions API. Swap to `mistral-medium-latest`, `mistral-large-latest`, or `mistral-small-latest` by editing [`lib/llm.ts`](./lib/llm.ts). The Speech Engine SDK reads OpenAI-format stream chunks natively, so Mistral plugs in with zero translation.
 - **Storage**: None. Keys live in the browser&apos;s localStorage. Sessions persist only in memory on the server (no DB).
 
 ## Quick start

@@ -52,7 +52,7 @@ export default function Home() {
           />
           <FeatureCard
             title="Mistral-powered, free"
-            body="mistral-small-latest by default — fast streaming, 1B free tokens/month. Swap to medium or large in lib/llm.ts."
+            body="ministral-8b-latest by default — fast streaming, free tier. Swap to medium/large in lib/llm.ts."
           />
           <FeatureCard
             title="Honest critique"

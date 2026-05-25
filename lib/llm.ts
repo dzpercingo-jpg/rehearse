@@ -17,8 +17,8 @@ export const MISTRAL_BASE_URL = "https://api.mistral.ai/v1";
 
 /** Models we recommend for the voice loop. All work on the free tier. */
 export const MISTRAL_VOICE_MODELS = {
-  fast: "ministral-8b-latest", // lowest latency, smaller model
-  balanced: "mistral-small-latest", // recommended default
+  fast: "ministral-3b-latest", // lowest latency, tiny model
+  balanced: "ministral-8b-latest", // recommended default — fast + reliable on free tier
   quality: "mistral-medium-latest", // sharper reasoning, slightly slower
 } as const;
 
