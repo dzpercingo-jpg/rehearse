@@ -91,7 +91,7 @@ export function SetupWizard() {
           {step === "elevenlabs" && (
             <motion.div
               key="el"
-              initial={{ opacity: 0, y: 8 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25 }}
@@ -160,7 +160,7 @@ export function SetupWizard() {
           {step === "mistral" && (
             <motion.div
               key="mistral"
-              initial={{ opacity: 0, y: 8 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25 }}
@@ -252,7 +252,7 @@ export function SetupWizard() {
           {step === "ready" && (
             <motion.div
               key="ready"
-              initial={{ opacity: 0, y: 8 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25 }}

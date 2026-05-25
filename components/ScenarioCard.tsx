@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 import type { Scenario } from "@/lib/scenarios";
 import { cn } from "@/lib/utils";
 
@@ -15,12 +14,9 @@ export function ScenarioCard({
   href: string;
 }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.04 * index, duration: 0.4, ease: "easeOut" }}
-      whileHover={{ y: -3 }}
-      className="group"
+    <div
+      className="group scenario-card-reveal"
+      style={{ animationDelay: `${index * 40}ms` }}
     >
       <Link
         href={href}
@@ -34,7 +30,7 @@ export function ScenarioCard({
             "group-hover:border-white/25 group-hover:shadow-2xl group-hover:shadow-black/40",
           )}
         >
-          <div className="absolute inset-0 bg-black/55 transition-opacity group-hover:bg-black/45" />
+          <div className="absolute inset-0 bg-black/35 transition-opacity group-hover:bg-black/20" />
           <div className="relative z-10 flex h-full flex-col gap-3">
             <div className="flex items-center justify-between">
               <span className="text-2xl leading-none">{scenario.emoji}</span>
@@ -56,6 +52,6 @@ export function ScenarioCard({
           </div>
         </div>
       </Link>
-    </motion.div>
+    </div>
   );
 }

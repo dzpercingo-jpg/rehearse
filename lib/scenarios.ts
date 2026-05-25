@@ -64,7 +64,7 @@ export const SCENARIOS: Scenario[] = [
       "You sit down with your manager to ask for a 15% raise. They've been receptive to feedback in the past, but the company is tight on budget this year. You have to demonstrate impact, not entitlement.",
     agentRole: "Your direct manager",
     userRole: "You — the employee asking",
-    gradient: "from-amber-500/30 via-orange-500/20 to-rose-500/30",
+    gradient: "from-amber-500/70 via-orange-500/55 to-rose-500/70",
     systemPrompt: `You are a senior engineering manager at a mid-size tech company. One of your direct reports has just asked to talk about their compensation. You like them and respect their work, but the company is under cost pressure this quarter, so any raise has to be defensible.
 
 Your behavior:
@@ -127,7 +127,7 @@ Your behavior:
       "You're ending a long-term relationship. You're not angry, you're certain. They deserve to hear it from you, clearly and with respect. They will not make it easy.",
     agentRole: "Your partner of several years",
     userRole: "You — the person initiating",
-    gradient: "from-rose-500/30 via-pink-500/20 to-purple-500/30",
+    gradient: "from-rose-500/70 via-pink-500/55 to-purple-500/70",
     systemPrompt: `You are the partner of someone who has just sat you down for a serious talk. You sense what's coming. You love them. You don't want this to happen.
 
 Your behavior:
@@ -191,7 +191,7 @@ Your behavior:
       "Your landlord wants to raise your rent by 12% on renewal. You've been a great tenant for years. You think 4% is fair. Convince them.",
     agentRole: "Your landlord on a phone call",
     userRole: "You — the tenant pushing back",
-    gradient: "from-emerald-500/30 via-teal-500/20 to-cyan-500/30",
+    gradient: "from-emerald-500/70 via-teal-500/55 to-cyan-500/70",
     systemPrompt: `You are a small-time landlord who owns 3-4 rental properties. You're not greedy but you're a businessperson. You called your tenant to discuss renewal terms.
 
 Your behavior:
@@ -253,7 +253,7 @@ Your behavior:
       "You're pitching your startup to a partner at a top-tier VC. They've heard 200 pitches this month. You have to be sharp, specific, and survive their hardest questions.",
     agentRole: "A jaded VC partner",
     userRole: "You — the founder pitching",
-    gradient: "from-violet-500/30 via-fuchsia-500/20 to-pink-500/30",
+    gradient: "from-violet-500/70 via-fuchsia-500/55 to-pink-500/70",
     systemPrompt: `You are a partner at a top-tier venture capital firm. You've heard ten thousand pitches. You're not mean, but you have zero patience for fluff.
 
 Your behavior:
@@ -316,7 +316,7 @@ Your behavior:
       "You're in the final-round behavioral interview for a job you really want. The interviewer is a senior leader. They will probe your stories, ask follow-ups, and notice when you're vague.",
     agentRole: "A senior hiring manager",
     userRole: "You — the candidate",
-    gradient: "from-blue-500/30 via-indigo-500/20 to-purple-500/30",
+    gradient: "from-blue-500/70 via-indigo-500/55 to-purple-500/70",
     systemPrompt: `You are a senior hiring manager conducting a final-round behavioral interview. You are warm but rigorous. You want to find out who this person really is.
 
 Your behavior:
@@ -380,7 +380,7 @@ Your behavior:
       "You've made a major life decision your parents won't like — quitting your degree, leaving a stable job, ending an engagement, moving across the world. You owe them the conversation. They will not take it well at first.",
     agentRole: "Your parent (mom or dad)",
     userRole: "You — the adult child",
-    gradient: "from-yellow-500/30 via-amber-500/20 to-orange-500/30",
+    gradient: "from-yellow-500/70 via-amber-500/55 to-orange-500/70",
     systemPrompt: `You are the parent of a grown child who has just sat you down to tell you something difficult. You sense this is going to be heavy.
 
 Your behavior:
@@ -443,7 +443,7 @@ Your behavior:
       "You're seeing a doctor about a persistent symptom they've already dismissed once. You're 90% sure it's not 'just stress.' You need to advocate for yourself — calmly, specifically, and without being adversarial.",
     agentRole: "A busy doctor or specialist",
     userRole: "You — the patient pushing back",
-    gradient: "from-sky-500/30 via-blue-500/20 to-indigo-500/30",
+    gradient: "from-sky-500/70 via-blue-500/55 to-indigo-500/70",
     systemPrompt: `You are a doctor seeing a patient who has come back with a complaint you previously dismissed. You're busy, you have 8 minutes, and pattern-matching tells you it's still nothing serious. But you are not unkind.
 
 Your behavior:
@@ -504,7 +504,7 @@ Your behavior:
       "Describe the conversation you need to practice. Who is on the other side? What do they want? What's their tone? We'll build the persona on the fly.",
     agentRole: "Whoever you choose",
     userRole: "You",
-    gradient: "from-zinc-500/30 via-slate-500/20 to-zinc-700/30",
+    gradient: "from-zinc-500/70 via-slate-500/55 to-zinc-700/70",
     systemPrompt: `You are roleplaying a difficult conversation partner for someone who is practicing. The user has described who you are and what they want to practice. Stay in that role.
 
 Default rules of the road (apply unless the user override says otherwise):

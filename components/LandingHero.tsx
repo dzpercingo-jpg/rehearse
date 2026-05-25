@@ -20,7 +20,7 @@ export function LandingHero() {
     <section className="relative overflow-hidden">
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-center px-6 pb-12 pt-20 text-center sm:pt-28">
         <motion.div
-          initial={{ opacity: 0, y: 8 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-300"
@@ -33,7 +33,7 @@ export function LandingHero() {
         </motion.div>
 
         <motion.h1
-          initial={{ opacity: 0, y: 12 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.05 }}
           className="mt-6 max-w-3xl text-5xl font-semibold leading-[1.05] tracking-tight text-white text-balance sm:text-6xl"
@@ -45,7 +45,7 @@ export function LandingHero() {
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 8 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.12 }}
           className="mt-6 max-w-2xl text-lg leading-relaxed text-zinc-300 text-balance"
@@ -56,7 +56,7 @@ export function LandingHero() {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 8 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.18 }}
           className="mt-9 flex flex-col items-center gap-3 sm:flex-row"
@@ -94,7 +94,7 @@ export function LandingHero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 8 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.32 }}
           className="mt-14 grid w-full max-w-3xl grid-cols-3 gap-3 text-left"

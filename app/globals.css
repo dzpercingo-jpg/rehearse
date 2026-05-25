@@ -139,3 +139,23 @@ body {
   border: 2px solid currentColor;
   animation: pulse-ring 1.6s ease-out infinite;
 }
+
+@keyframes scenario-card-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scenario-card-reveal {
+  opacity: 0;
+  animation: scenario-card-reveal 0.45s ease-out forwards;
+}
+
+.scenario-card-reveal:hover > a > div {
+  transform: translateY(-3px);
+}

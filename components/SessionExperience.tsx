@@ -89,7 +89,7 @@ export function SessionExperience({ scenario }: { scenario: Scenario }) {
           {stage === "configure" && (
             <motion.div
               key="configure"
-              initial={{ opacity: 0, y: 8 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25 }}
@@ -179,7 +179,7 @@ export function SessionExperience({ scenario }: { scenario: Scenario }) {
           {stage === "live" && (
             <motion.div
               key="live"
-              initial={{ opacity: 0, y: 8 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}

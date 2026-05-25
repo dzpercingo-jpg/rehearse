@@ -309,7 +309,7 @@ function TranscriptBubble({ entry }: { entry: TranscriptEntry }) {
   const isUser = entry.role === "user";
   return (
     <motion.div
-      initial={{ opacity: 0, y: 6 }}
+      initial={false}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.18 }}
       className={cn("flex w-full", isUser ? "justify-end" : "justify-start")}

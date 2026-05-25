@@ -115,7 +115,7 @@ export function ReviewView() {
       </Link>
 
       <motion.div
-        initial={{ opacity: 0, y: 8 }}
+        initial={false}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
         className="mt-4 flex items-start gap-4"
@@ -226,7 +226,7 @@ export function ReviewView() {
 function ScoreHero({ critique }: { critique: Critique }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 8 }}
+      initial={false}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: 0.1 }}
       className="mt-8 glass-strong rounded-3xl p-8 flex flex-col items-center text-center sm:flex-row sm:items-center sm:text-left sm:gap-8"
